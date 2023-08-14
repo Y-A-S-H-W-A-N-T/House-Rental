@@ -2,7 +2,9 @@ import React from 'react'
 import { db } from './firebase'
 import { collection, getDocs} from '@firebase/firestore'
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import './css/rents.css'
+import Display from './display'
 
 function Rents() {
     const Database = collection(db,"Rents")
@@ -21,11 +23,9 @@ function Rents() {
     <div className='main-box'>
       {
         rent.map((data,id)=>(
-          <div key={id} className='data'>
-            <h1>LOCATION :</h1><p>{data.location}</p>
-            <h1>ROOMS :</h1><p>{data.price}</p>
-            <h1>ROOMS :</h1><p>{data.rooms}</p>
-          </div>
+          <Link to={`/room/${data.id}`}>
+              <Display prop={data} id={id}/>
+          </Link>
         ))
       }
     </div>

@@ -1,5 +1,6 @@
 *{
     text-align: center;
+    color: red;
 }
 
 .data h1{
@@ -14,5 +15,4 @@
 
 .data p{
     display: inline;
-    margin-right: 30px;
 }
