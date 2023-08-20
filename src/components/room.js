@@ -2,7 +2,6 @@ import React from 'react'
 import { db } from './firebase'
 import { useState, useEffect } from 'react'
 import { getDoc, doc} from '@firebase/firestore'
-import './css/display.css'
 import { useParams } from 'react-router-dom'
 
 function Display() {

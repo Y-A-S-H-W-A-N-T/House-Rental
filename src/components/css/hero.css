@@ -1,0 +1,38 @@
+.heropage {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px;
+    padding: 70px 10px 0 20px;
+    height: 80vh;
+  }
+  h1 {
+    text-transform: uppercase;
+  }
+  .heropage #heropagetext {
+    padding: 0 0 0 20vh;
+  }
+  .heropage #heropagetext h1,
+  p,
+  h4 {
+    padding-top: 20px;
+  }
+  h1 {
+    text-shadow: 2px #918c7a;
+  }
+  em {
+    font-family: "Herr Von Muellerhoff", cursive;
+    color: rgb(155, 117, 79);
+  }
+  p {
+    color: #b8a762;
+  }
+  
+  .heropage img {
+    border-radius: 15px 0 130px 0;
+    box-shadow: 5px 5px 20px rgb(79, 58, 3);
+    transition: ease-in-out 0.5s;
+  }
+  .heropage img:hover {
+    height: 500px;
+  }
